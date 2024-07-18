@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "example-package-mbadams"
+version = "0.1.1"
+dependencies = [
+  "numpy"
+]
+authors = [
+  { name="Marissa Adams", email="mbadams@sandia.gov" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+"Homepage" = "https://madams15.github.io/example-package-mbadams"
+"Source Code" = "https://github.com/madams15/example-package-mbadams"
